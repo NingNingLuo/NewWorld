@@ -37,7 +37,7 @@ class ELMySelfViewController: UIViewController, UITableViewDelegate, UITableView
 
         // Do any additional setup after loading the view.
         
-//        self.addTableViewFunc()
+        self.addTableViewFunc()
         
 //        self.createScrollViewFunc()
         
@@ -46,34 +46,20 @@ class ELMySelfViewController: UIViewController, UITableViewDelegate, UITableView
 //        self.constructorFunction()
 //
 //        self.createScrollViewFunc()
-        var array1 = [1,2,3,4,5,6,7,8]
-        var array = ["D","F","G"]
-        for  i in 0..<array.count {
-            print("------",i)
-            array1.append(i)
-            array.append(String(i))
-        }
-        var str = "qwer"
-        str.append("12")
-        if (str.range(of: "W") != nil) {
-            print("------")
-        }else{
-            print("------++++++++")
-        }
-        dataArray.append(contentsOf: ["22","33"])
     }
     
     func addTableViewFunc(){
         
         model1.nameStr = "007"
-        print("001----%@",dataArray)
-        print("002----%@",dataList2)
-        print("003----%@",customFunc())
+        print("001-",dataArray)
+        print("002--",dataList2)
+        print("003---",customFunc())
         
         tableview = UITableView(frame: self.view.bounds, style: .plain)
         tableview.delegate = self
         tableview.dataSource = self
 //        tableview.frame = self.view.bounds
+        tableview.rowHeight = UITableView.automaticDimension
         self.view.addSubview(tableview)
         
         tableview.reloadData()
@@ -187,10 +173,15 @@ class ELMySelfViewController: UIViewController, UITableViewDelegate, UITableView
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as? ELMySelfTableViewCell
             ?? ELMySelfTableViewCell(style: .default, reuseIdentifier: cellIdentifier)
         // 配置cell的内容
-        cell.label.text = "111222"
+        cell.label.text = "111222\n111222\n111222"
+        
         return cell
     }
     
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+////        return UITableView.automaticDimension
+//        return 80
+//    }
     
 }
 

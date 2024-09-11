@@ -29,7 +29,8 @@ class ELMySelfTableViewCell: UITableViewCell {
         
         // 初始化并配置子视图
         label = UILabel()
-        label.frame = CGRect(x: 10, y: 0, width: 100, height: 44)
+        label.numberOfLines = 0
+        label.frame = CGRect(x: 10, y: 0, width: 100, height: 80)
         self.addSubview(label)
         
 //        let btn = UIButton(type: UIButton.ButtonType.contactAdd)
@@ -37,6 +38,8 @@ class ELMySelfTableViewCell: UITableViewCell {
 //        btn.addTarget(self, action: Selector(("btnClick:")), for: UIControl.Event.touchUpInside)
 //        self.addSubview(btn)
         
+        
+        self.addSubview(titleLB)
         
         addBtn = UIButton(type: UIButton.ButtonType.contactAdd)
 //        addBtn.center = CGPoint(x: UIScreen.main.bounds.width * 0.5, y: UIScreen.main.bounds.height * 0.5)
@@ -48,6 +51,15 @@ class ELMySelfTableViewCell: UITableViewCell {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    lazy var titleLB = { () -> UILabel in
+           let label = UILabel()
+           label.text = "这是一个Label"
+           label.font = .systemFont(ofSize: 16)
+           label.textColor = UIColor.black
+            label.frame = CGRect(x: 200, y: 0, width: 100, height: 80)
+           return label
+       }()
     
     func setDataDict(){
         label.text = ""

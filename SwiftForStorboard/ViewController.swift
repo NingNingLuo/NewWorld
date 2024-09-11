@@ -18,10 +18,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-//        tableview.delegate = self
-//        tableview.dataSource = self
-//        tableview.frame = self.view.bounds
-//        self.view.addSubview(tableview)
+        tableview.delegate = self
+        tableview.dataSource = self
+        tableview.frame = self.view.bounds
+        self.view.addSubview(tableview)
         
         
     }

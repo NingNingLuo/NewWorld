@@ -3,13 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D46320EAE3322477C0895EC /* Pods_SwiftForStorboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB4D30DBD93588C2A4705E0D /* Pods_SwiftForStorboard.framework */; };
 		D84253822C90331A000626CB /* ELMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84253812C90331A000626CB /* ELMainViewController.swift */; };
 		D8D185DC2C7585DC00866001 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D185DB2C7585DC00866001 /* AppDelegate.swift */; };
-		D8D185DE2C7585DC00866001 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D185DD2C7585DC00866001 /* SceneDelegate.swift */; };
 		D8D185E02C7585DC00866001 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D185DF2C7585DC00866001 /* ViewController.swift */; };
 		D8D185E32C7585DC00866001 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D8D185E22C7585DC00866001 /* Base */; };
 		D8D185E52C7585DD00866001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8D185E42C7585DD00866001 /* Assets.xcassets */; };
@@ -20,10 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09B2FABAB84C681A0B27D5E0 /* Pods-SwiftForStorboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftForStorboard.release.xcconfig"; path = "Target Support Files/Pods-SwiftForStorboard/Pods-SwiftForStorboard.release.xcconfig"; sourceTree = "<group>"; };
+		9D45114753E0C865840695D4 /* Pods-SwiftForStorboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftForStorboard.debug.xcconfig"; path = "Target Support Files/Pods-SwiftForStorboard/Pods-SwiftForStorboard.debug.xcconfig"; sourceTree = "<group>"; };
 		D84253812C90331A000626CB /* ELMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELMainViewController.swift; sourceTree = "<group>"; };
 		D8D185D82C7585DC00866001 /* SwiftForStorboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftForStorboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8D185DB2C7585DC00866001 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D8D185DD2C7585DC00866001 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D8D185DF2C7585DC00866001 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D8D185E22C7585DC00866001 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D8D185E42C7585DD00866001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -32,6 +33,7 @@
 		D8D185EF2C7590CD00866001 /* ELMySelfTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELMySelfTableViewCell.swift; sourceTree = "<group>"; };
 		D8D185F12C75B3A000866001 /* ELMySelfCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELMySelfCellModel.swift; sourceTree = "<group>"; };
 		D8D185F32C75B42B00866001 /* ELMySelfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELMySelfViewController.swift; sourceTree = "<group>"; };
+		EB4D30DBD93588C2A4705E0D /* Pods_SwiftForStorboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftForStorboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,12 +41,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D46320EAE3322477C0895EC /* Pods_SwiftForStorboard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A50EB798160404D71EAFEC0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB4D30DBD93588C2A4705E0D /* Pods_SwiftForStorboard.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CFB8D0F69A8CEFD9F2CB82DF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D45114753E0C865840695D4 /* Pods-SwiftForStorboard.debug.xcconfig */,
+				09B2FABAB84C681A0B27D5E0 /* Pods-SwiftForStorboard.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D80C4B092C80048E008AA173 /* MVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +89,8 @@
 			children = (
 				D8D185DA2C7585DC00866001 /* SwiftForStorboard */,
 				D8D185D92C7585DC00866001 /* Products */,
+				CFB8D0F69A8CEFD9F2CB82DF /* Pods */,
+				5A50EB798160404D71EAFEC0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,7 +108,6 @@
 				D80C4B0A2C800919008AA173 /* MVVM */,
 				D80C4B092C80048E008AA173 /* MVC */,
 				D8D185DB2C7585DC00866001 /* AppDelegate.swift */,
-				D8D185DD2C7585DC00866001 /* SceneDelegate.swift */,
 				D8D185DF2C7585DC00866001 /* ViewController.swift */,
 				D8D185E12C7585DC00866001 /* Main.storyboard */,
 				D8D185E42C7585DD00866001 /* Assets.xcassets */,
@@ -102,6 +124,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D8D185EC2C7585DD00866001 /* Build configuration list for PBXNativeTarget "SwiftForStorboard" */;
 			buildPhases = (
+				7255789C54E6763D939F7384 /* [CP] Check Pods Manifest.lock */,
 				D8D185D42C7585DC00866001 /* Sources */,
 				D8D185D52C7585DC00866001 /* Frameworks */,
 				D8D185D62C7585DC00866001 /* Resources */,
@@ -131,7 +154,7 @@
 				};
 			};
 			buildConfigurationList = D8D185D32C7585DC00866001 /* Build configuration list for PBXProject "SwiftForStorboard" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -161,6 +184,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7255789C54E6763D939F7384 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftForStorboard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D8D185D42C7585DC00866001 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -170,7 +218,6 @@
 				D8D185F22C75B3A000866001 /* ELMySelfCellModel.swift in Sources */,
 				D8D185DC2C7585DC00866001 /* AppDelegate.swift in Sources */,
 				D8D185F02C7590CD00866001 /* ELMySelfTableViewCell.swift in Sources */,
-				D8D185DE2C7585DC00866001 /* SceneDelegate.swift in Sources */,
 				D8D185F42C75B42B00866001 /* ELMySelfViewController.swift in Sources */,
 				D84253822C90331A000626CB /* ELMainViewController.swift in Sources */,
 			);
@@ -319,6 +366,7 @@
 		};
 		D8D185ED2C7585DD00866001 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D45114753E0C865840695D4 /* Pods-SwiftForStorboard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -347,6 +395,7 @@
 		};
 		D8D185EE2C7585DD00866001 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09B2FABAB84C681A0B27D5E0 /* Pods-SwiftForStorboard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
