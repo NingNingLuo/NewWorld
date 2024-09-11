@@ -23,6 +23,7 @@
 		09B2FABAB84C681A0B27D5E0 /* Pods-SwiftForStorboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftForStorboard.release.xcconfig"; path = "Target Support Files/Pods-SwiftForStorboard/Pods-SwiftForStorboard.release.xcconfig"; sourceTree = "<group>"; };
 		9D45114753E0C865840695D4 /* Pods-SwiftForStorboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftForStorboard.debug.xcconfig"; path = "Target Support Files/Pods-SwiftForStorboard/Pods-SwiftForStorboard.debug.xcconfig"; sourceTree = "<group>"; };
 		D84253812C90331A000626CB /* ELMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELMainViewController.swift; sourceTree = "<group>"; };
+		D84253842C919B47000626CB /* Demo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Demo-Bridging-Header.h"; sourceTree = "<group>"; };
 		D8D185D82C7585DC00866001 /* SwiftForStorboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftForStorboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8D185DB2C7585DC00866001 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8D185DF2C7585DC00866001 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,7 +63,6 @@
 				9D45114753E0C865840695D4 /* Pods-SwiftForStorboard.debug.xcconfig */,
 				09B2FABAB84C681A0B27D5E0 /* Pods-SwiftForStorboard.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -82,6 +82,14 @@
 				D84253812C90331A000626CB /* ELMainViewController.swift */,
 			);
 			path = MVVM;
+			sourceTree = "<group>";
+		};
+		D84253832C919ABE000626CB /* brige */ = {
+			isa = PBXGroup;
+			children = (
+				D84253842C919B47000626CB /* Demo-Bridging-Header.h */,
+			);
+			path = brige;
 			sourceTree = "<group>";
 		};
 		D8D185CF2C7585DC00866001 = {
@@ -105,6 +113,7 @@
 		D8D185DA2C7585DC00866001 /* SwiftForStorboard */ = {
 			isa = PBXGroup;
 			children = (
+				D84253832C919ABE000626CB /* brige */,
 				D80C4B0A2C800919008AA173 /* MVVM */,
 				D80C4B092C80048E008AA173 /* MVC */,
 				D8D185DB2C7585DC00866001 /* AppDelegate.swift */,
@@ -128,6 +137,7 @@
 				D8D185D42C7585DC00866001 /* Sources */,
 				D8D185D52C7585DC00866001 /* Frameworks */,
 				D8D185D62C7585DC00866001 /* Resources */,
+				2CE8C7D612CBAB280614CA77 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -185,6 +195,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2CE8C7D612CBAB280614CA77 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftForStorboard/Pods-SwiftForStorboard-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftForStorboard/Pods-SwiftForStorboard-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftForStorboard/Pods-SwiftForStorboard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7255789C54E6763D939F7384 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -373,6 +400,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KCLCJ9X7RB;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftForStorboard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -388,6 +416,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.newsoft.SwiftForStorboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/SwiftForStorboard/brige/Demo-Bridging-Header.h";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -402,6 +432,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KCLCJ9X7RB;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftForStorboard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -417,6 +448,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.newsoft.SwiftForStorboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

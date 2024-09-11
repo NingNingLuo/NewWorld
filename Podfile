@@ -6,5 +6,9 @@ target 'SwiftForStorboard' do
   use_frameworks!
 
   # Pods for SwiftForStorboard
-
+  pod 'AFNetworking'
+  pod 'MJRefresh'
+  pod 'Masonry'
+  pod 'MBProgressHUD'
+  pod 'MJExtension'
 end

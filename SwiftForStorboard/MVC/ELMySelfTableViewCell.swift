@@ -30,22 +30,28 @@ class ELMySelfTableViewCell: UITableViewCell {
         // 初始化并配置子视图
         label = UILabel()
         label.numberOfLines = 0
-        label.frame = CGRect(x: 10, y: 0, width: 100, height: 80)
+//        label.frame = CGRect(x: 10, y: 0, width: 100, height: 80)
         self.addSubview(label)
         
 //        let btn = UIButton(type: UIButton.ButtonType.contactAdd)
 //        btn.center = CGPoint(x: UIScreen.main.bounds.width * 0.5, y: UIScreen.main.bounds.height * 0.5)
 //        btn.addTarget(self, action: Selector(("btnClick:")), for: UIControl.Event.touchUpInside)
 //        self.addSubview(btn)
+        label.mas_makeConstraints ({ (makeBlock) in
+            let make = makeBlock! as MASConstraintMaker
+            make.top.equalTo()(self)?.offset()(10)
+            make.left.equalTo()(self)?.offset()(10)
+            make.right.equalTo()(self)?.offset()(-10)
+            make.bottom.equalTo()(self)?.offset()(-10)
+        })
         
-        
-        self.addSubview(titleLB)
-        
-        addBtn = UIButton(type: UIButton.ButtonType.contactAdd)
-//        addBtn.center = CGPoint(x: UIScreen.main.bounds.width * 0.5, y: UIScreen.main.bounds.height * 0.5)
-        addBtn.frame = CGRect(x: 100, y: 0, width: 44, height: 44)
-        addBtn.addTarget(self, action: Selector(("btnClick:")), for: UIControl.Event.touchUpInside)
-        self.addSubview(addBtn)
+//        self.addSubview(titleLB)
+//        
+//        addBtn = UIButton(type: UIButton.ButtonType.contactAdd)
+////        addBtn.center = CGPoint(x: UIScreen.main.bounds.width * 0.5, y: UIScreen.main.bounds.height * 0.5)
+//        addBtn.frame = CGRect(x: 100, y: 0, width: 44, height: 44)
+//        addBtn.addTarget(self, action: Selector(("btnClick:")), for: UIControl.Event.touchUpInside)
+//        self.addSubview(addBtn)
     }
     
     required init?(coder aDecoder: NSCoder) {

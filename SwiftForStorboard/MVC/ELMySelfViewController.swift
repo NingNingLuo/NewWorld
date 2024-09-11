@@ -173,14 +173,13 @@ class ELMySelfViewController: UIViewController, UITableViewDelegate, UITableView
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as? ELMySelfTableViewCell
             ?? ELMySelfTableViewCell(style: .default, reuseIdentifier: cellIdentifier)
         // 配置cell的内容
-        cell.label.text = "111222\n111222\n111222"
+        cell.label.text = "111222\n111222\n111222111222\n111222\n111222"
         
         return cell
     }
     
 //    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-////        return UITableView.automaticDimension
-//        return 80
+//        return UITableView.automaticDimension
 //    }
     
 }
