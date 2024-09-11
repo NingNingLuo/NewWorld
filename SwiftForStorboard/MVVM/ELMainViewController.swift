@@ -13,6 +13,9 @@ class ELMainViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        for i in 0...5 {
+            print(i)
+        }
     }
     
 
